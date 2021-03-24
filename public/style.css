@@ -1,0 +1,95 @@
+body, html {
+    font-family: 'Open Sans';
+}
+
+.total {
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.inputs div {
+    display: flex;
+    flex-flow: column;
+}
+
+.inputs div input {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.container section > div {
+    display: grid;
+    grid-template-columns: 10% 50% 20% 20%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container section div div {
+    display: flex;
+    align-items: center;
+}
+
+
+.container section div .icons {
+    justify-content: space-around;
+}
+
+.add {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #f39c12;
+    border-radius: 100%;
+    padding: 20px;
+    color: #fff;
+}
+
+.logout {
+    position: fixed;
+    right: 50px;
+    top: 20px;
+    background-color: #f39c12;
+    border-radius: 100%;
+    padding: 20px;
+    color: #fff;
+}
+
+.logout:hover, .add:hover{
+    cursor: pointer;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: center;
+  }
+  
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+}
+  
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    
+    .topnav input[type=text] {
+        border: 1px solid #ccc;  
+    }
+}

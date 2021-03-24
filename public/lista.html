@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>La lista del super</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="total" id="total">$ 0</h1>
+        <div class="inputs">
+            <div>
+                <label for="input-product">Product</label>
+                <input type="text" id="input-product">
+            </div>
+            <div>
+                <label for="input-price">Price</label>
+                <input type="text" id="input-price">
+            </div>
+        </div>
+
+        <div class="topnav">
+            <input id = "search" type="text" placeholder="Búsqueda avanzada...">
+        </div>
+
+        <section id = "products">
+            
+        </section>
+
+        <div class="add" id="add">
+            <i class="fas fa-plus"></i>
+        </div>
+
+        <div class="logout" id = "logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://kit.fontawesome.com/8d9cbc1ace.js" crossorigin="anonymous"></script>
+ 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase.js"></script>
+
+    <script src ="fb_start.js"></script>
+
+    <script defer src="app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
